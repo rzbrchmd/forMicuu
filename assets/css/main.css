@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; /* Mengubah latar belakang menjadi hitam */
+    color: white; /* Mengubah warna teks menjadi putih */
+ }
+ 
+ .container {
+    max-width:800px ;
+    margin:auto ;
+ }
+ 
+ .row {
+    display:flex ;
+    flex-wrap:wrap ;
+ }
+ 
+ .col-md-4 {
+    flex:0 0 calc(30.00%); /* Mengatur lebar kolom menjadi sepertiga dari lebar baris */
+    padding:10px; /* Menambahkan padding untuk ruang antara gambar */
+ }
+ 
+ .gallery-item {
+    cursor:pointer ;
+    width:100%; 
+    height:auto ;
+    border-radius :5 px ;
+    border:5px solid lightgray; /* Menambahkan border ungu */
+    transition: transform .3s ease; /* Transisi untuk efek hover */
+ }
+ 
+ .gallery-item:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+ }
+ 
+ .position-relative {
+    position: relative; /* Membuat posisi relatif untuk kontainer gambar */
+ }
+ 
+ .overlay {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%); /* Memposisikan teks di tengah */
+    color:white; /* Warna teks */
+    background-color: rgba(0,0,0,0.5); /* Latar belakang semi-transparan */
+    padding:10px;
+    border-radius:5px;
+    text-align:center;
+ }
+ 
+ #popup-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Mulai dengan skala 0 */
+    background-color: black; 
+    color: pink; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.2) 0px 5px 15px;
+
+    opacity: 0; /* Mulai dengan opacity 0 */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transisi untuk opacity dan transform */
+}
+
+#popup-content.show {
+    opacity: 1; /* Ketika ditampilkan, opacity menjadi 1 */
+    transform: translate(-50%, -50%) scale(1); /* Kembali ke skala normal saat muncul */
+}
+ 
+ button {
+    margin-top :10 px ;
+ }
+
+ #login-form {
+    background-color: rgba(0, 0, 0, 0.7); /* Latar belakang semi-transparan */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ #gallery.pop {
+    animation: pop-in 0.01 ease forwards; /* Menggunakan efek animasi */
+ }
+ 
+ @keyframes pop-in {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+ }
+ .gallery-item {
+    opacity: 0; /* Mulai dengan opacity 0 */
+    transform: scale(0); /* Mulai dengan skala 0 */
+    transition: opacity 0.1s ease, transform 0.3s ease; /* Transisi untuk efek */
+}
+
+.gallery-item.show {
+    opacity: 1; /* Ketika ditampilkan, opacity menjadi 1 */
+    transform: scale(1); /* Kembali ke skala normal saat muncul */
+}
+
+ 
+ 

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+   <meta charset="UTF-8">    
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+   <title>micuuuu >_< </title>
+   <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+<!-- Form Login -->
+<div id="login-form" class="bg-img">
+    <div class="container mt-5">
+        <h2>Login</h2>
+        <form onsubmit="return handleLogin(event)">
+            <div class="form-group">
+                <label for="username">Username nya micull:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Passwordnya cakep:</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit">push it if u want see something</button>
+        </form>
+    </div>
+</div>
+
+<body>
+
+    <!-- Gambar Galeri -->
+<div id="gallery" class="container mt-5" style="display: none;">
+    <div class="row">
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Gambar 1 -->
+        <div class="col-md-4">
+            <img src="m1.jpg" alt="Gambar 1" class="gallery-item" onclick='showDetails("hawooo micuuu <3", "foto mirorr nih buset hahaha btw in this photo, u look so beautiful, im amazed!!!.")'>
+        </div>
+        <!-- Gambar 2 -->
+        <div class="col-md-4">
+            <img src="m2.jpg" alt="Gambar 2" class="gallery-item" onclick='showDetails("WOW 🤩", "in this photo, you look really hot, i was speechless hahaha, its not wrong that people think you look like a selebgram")'>
+        </div>
+        <!-- Gambar 3 -->
+        <div class="col-md-4">
+            <img src="m3.jpg" alt="Gambar 3" class="gallery-item" onclick='showDetails("masyaAllah!!!", "in this photo, u look very different, maybe because ure wearing a hijab, but regardless, ure still beautiful no matter what.")'>
+        </div>
+        
+        <!-- Gambar 4 -->
+        <div class="col-md-4">
+            <img src="m4.jpg" alt="Gambar 4" class="gallery-item" onclick='showDetails("wah ukhty bangett yahh😋", "cute banget si kamu yang di foto ini hhuh")'>
+        </div>
+        <!-- Gambar 5 -->
+        <div class="col-md-4">
+            <img src="m8.jpg" alt="Gambar 5" class="gallery-item" onclick='showDetails("WAH KOPII", "i think second date will be coffee date ya  HAHAHA i cant waitt,i miss u so bad micuu.")'>
+        </div>
+        <!-- Gambar 6 -->
+        <div class="col-md-4">
+            <img src="m6.jpg" alt="Gambar 6" class="gallery-item" onclick='showDetails("fun fact", "foto ini tuh foto kamu yang pertama kali aku liat di bumble heheh maybe bisa di bilang it all started form here.")'>
+        </div>
+
+        <!-- Gambar 7 -->
+        <div class="col-md-4">
+            <img src="m7.jpg" alt="Gambar 7" class="gallery-item" onclick='showDetails("more", "even your beauty can be compared to the beauty of the twilight sky, why are you so beautiful?")'>
+        </div>
+        <!-- Gambar 8 -->
+        <div class="col-md-4">
+            <img src="m5.jpg" alt="Gambar 8" class="gallery-item" onclick='showDetails("HAPPY BIRTHDAYYY", "karena kita belum ketemu ketika kamu ultah,jadinya aku mau ucapin sekarang aja,selamat ulang tahun yaa micuu,semoga yang udah cakep makin cakep lagiiii woof uuu!!!")'>
+        </div>
+        <!-- Gambar 9 -->
+        <div class="col-md-4">
+            <img src="m9.jpg" alt="Gambar 9" class="gallery-item" onclick='showDetails("mirorr again hahaha", "so lucky to be a mirror, because the mirror can see your beauty every day, i hope i can feel what the mirror feels, maybe the mirror is very happy when you stand in front of it .")'>
+        </div>
+
+    </div>
+    <button id="question-button" onclick="askQuestion()">ayo main game :D</button> <!-- Tombol untuk memulai pertanyaan -->
+</div>
+    </div>
+</div>
+
+<!-- Pop-up Content Container -->      
+<div id='popup-content' style='display:none;'>
+    <h2 id='title'></h2>
+    <hr/>
+    <p id='description'></p>
+    <button onclick='closePopup()'>pencet ini dulu</button>
+</div>
+
+<script src='./assets/js/script.js'></script>
+
+</body>
+
+
+</html>
